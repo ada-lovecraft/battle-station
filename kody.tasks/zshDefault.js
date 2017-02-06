@@ -14,13 +14,13 @@ const options = {
       const zshPlugins = config.zshPlugins
       if(zshPlugins.length) {
         log.info('Cloning zsh plugins')
-        shell.exec(`mkdir -p ${config.GIT_PROJECTS_FOLDER}`)
+        shell.exec(`mkdir -p ${config.ZSH_PLUGIN_DIRECTORY}`)
         try {
           for(const plugin in zshPlugins) {
-            const name = plugin.matches(/\/(.*)\.git/)
-            shell.exec(`git clone ${plugin} ${config.GIT_PROJECTS_FOLDER}/${name}`)
+            const name = plugin.match(/\/(.*)\.git/)[1]
+            shell.exec(`cd ${config.ZSH_PLUGIN_DIRECTORY} && git clone ${plugin}`)
           }
-        } catch(err) => reject(err)
+        } catch(err) {  reject(err) }
       }
 
 

@@ -7,7 +7,7 @@ const PROPS   = {
     ERROR_MSG: 'hpm is not installed',
   },
   options = {
-    name: 'hyper',
+    name: 'hpm',
     description: 'Install hyper plugins',
     exec: function(resolve, reject, shell, log, config) {
       const hpmWhich = shell.exec('which hpm', {silent: true});

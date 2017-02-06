@@ -13,8 +13,8 @@
   "exception-reporting":
     userId: "42a43341-90b1-673d-3ac7-3b7d9b900243"
   "file-types":
+    ".zshrc": "source.dotfiles"
     "^..*rc$": "source.json"
-    "\.zshrc": "source.dotfiles"
   "language-babel":
     autoIndentJSX: true
   "nebula-ui": {}

@@ -1,9 +1,9 @@
 {
-
   "order": [
     "homebrew.js",
     "brewCask.js",
     "npm.js",
+    "apm.js",
     "hpm.js",
     "mas.js",
     "*"
@@ -43,7 +43,7 @@
   ],
   "hyperPlugins": [
     "hyper-nord",
-    ""
+    "hyperterm-summon"
   ],
   "apmPackages": [
     "advanced-open-file",
@@ -72,7 +72,7 @@
   ],
   "globalNpmModules": [
     "xo",
-    "hpm-cli",
+    "hpm-cli@1.4.0",
     "kody",
     "pure-prompt"
   ],

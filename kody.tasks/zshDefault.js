@@ -19,7 +19,7 @@ const options = {
 
         try {
           for(const plugin of zshPlugins) {
-            if(typof plugin === 'object') {
+            if(typeof plugin === 'object') {
               shell.exec(`git clone ${plugin.mods} ${plugin.url}`)
             } else {
               shell.exec(`git clone ${plugin}`)

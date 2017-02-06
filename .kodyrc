@@ -1,0 +1,101 @@
+{
+  "order": [
+    "homebrew.js",
+    "brewCask.js",
+    "npm.js",
+    "mas.js",
+    "*"
+  ],
+  "gitCredentials": {
+    "name": "Ada Lovecraft",
+    "email": "ada@codevinsky.com"
+  },
+  "brewInstalls": [
+    "git",
+    "zsh-autosuggestions",
+    "zsh-syntax-highlighting"
+  ],
+  "brewCasks": [
+    "google-chrome",
+    "numi",
+    "atom",
+    "dash",
+    "tower",
+    "kaleidoscope",
+    "paw",
+    "kindle",
+    "sketch",
+    "sketch-toolbox",
+    "alfred",
+    "screenflow",
+    "webtorrent",
+    "kap",
+    "min",
+    "mancy",
+    "black-screen",
+    "caprine",
+    "slack",
+    "pingendo",
+    "inkdrop",
+    "hackolade"
+
+  ],
+  "apmPackages": [
+    "advanced-open-file",
+    "atomatigit",
+    "file-icons",
+    "file-types",
+    "git-log",
+    "git-plus",
+    "language-babel",
+    "language-diff",
+    "language-dotfiles",
+    "language-vue",
+    "linter",
+    "linter-xo",
+    "nebula-ui",
+    "nord-atom-syntax",
+    "nord-atom-ui",
+    "pigments",
+    "regex-railroad-diagram",
+    "vue2-autocomplete"
+  ],
+  "globalNpmModules": [
+    "xo",
+    "hpm-cli",
+    "kody",
+    "pure-prompt",
+  ],
+  "caskFonts": [
+    "fira-code",
+    "hasklig",
+    "hack"
+  ],
+  "masInstalls": [
+    { "name": "Refly Editor", "id": "1172952443" },
+    { "name": "ReadKit", "id": "588726889" },
+    { "name": "System Designer", "id": "1102494854" },
+    { "name": "1Password", "id": "443987910" },
+    { "name": "ScreenToLayers", "id": "1077317077" },
+    { "name": "GIPHY CAPTURE", "id": "668208984" },
+    { "name": "Expressions", "id": "913158085" },
+    { "name": "Noizio", "id": "928871589" },
+    { "name": "Bear", "id": "1091189122" },
+    { "name": "ScreenNinja", "id": "408219793" },
+    { "name": "Quiver", "id": "866773894" },
+    { "name": "Patterns", "id": "429449079" },
+    { "name": "Spark", "id": "1176895641" },
+    { "name": "Amphetamine", "id": "937984704" },
+    { "name": "Electron APIs", "id": "1119345146" },
+    { "name": "Harvest", "id": "506189836" },
+    { "name": "GIF Brewery 3", "id": "1081413713" },
+    { "name": "CloudApp", "id": "417602904" }
+  ],
+  "zshDefaultScriptPath": "zsh/set_default.sh",
+  "macosDefaultScriptPath": "macos/set_default.sh",
+  "appDefaultScriptPath": "macAppStore/set_default.sh",
+  "macosAppsToRemove": [
+    "Chess.app",
+    "Game Center.app"
+  ]
+}

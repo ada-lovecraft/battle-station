@@ -9,6 +9,8 @@ Icon
 
 # Node Modules
 node_modules/
+# apm modules
+atom.link/packages/
 
 # Thumbnails
 ._*

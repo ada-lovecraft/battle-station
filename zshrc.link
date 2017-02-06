@@ -3,8 +3,8 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # Preferred editor
-export PLUGINS='~/.zsh-plugins'
-export EDITOR='atom'
+export PLUGINS=~/.zsh-plugins
+export EDITOR=atom
 
 
 # Project Home Folder
@@ -26,8 +26,8 @@ alias reloadshell="source ~/.zshrc"
 source $PLUGINS"/project/project.sh"
 
 # k
-source $PLUGINS"/k/k.sh"
+source $PLUGINS"/k/k.plugin.zsh"
 
 # source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Enable syntax highlighting -- MUST BE LAST LINE
-source $PLUGINS"zsh-syntax-highlighting/zsh-syntax-highlighting.sh"
+source $PLUGINS"/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"

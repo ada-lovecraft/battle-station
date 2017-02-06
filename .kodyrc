@@ -14,11 +14,11 @@
   },
   "brewInstalls": [
     "git",
-    "hub",
-    "zsh-syntax-highlighting"
+    "hub"
   ],
   "brewCasks": [
     "google-chrome",
+    "hyper",
     "numi",
     "atom",
     "dash",
@@ -67,6 +67,7 @@
   ],
   "ZSH_PLUGIN_DIRECTORY": "~/.zsh-plugins",
   "zshPlugins": [
+    {"url": "https://github.com/gko/project.git", "mods": "--recursive --depth 1"},
     "https://github.com/zsh-users/zsh-syntax-highlighting.git",
     "https://github.com/supercrabtree/k.git"
   ],

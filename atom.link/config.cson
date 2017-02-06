@@ -20,8 +20,13 @@
   "nebula-ui": {}
   "nord-atom-ui":
     darkerFormFocusEffect: true
+  "pretty-json":
+    prettifyOnSaveJSON: true
   welcome:
     showOnStartup: false
 ".js.jsx.source":
+  editor:
+    showIndentGuide: true
+".json.source":
   editor:
     showIndentGuide: true

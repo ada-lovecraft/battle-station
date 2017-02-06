@@ -4,10 +4,10 @@ module.exports = {
     fontSize: 15,
 
     // font family with optional fallbacks
-    fontFamily: 'FiraCode, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Fira Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: '#EBCB8B',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -83,7 +83,12 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
-    summonShortcut: 'Ctrl+\\'
+    summonShortcut: 'Ctrl+\\',
+    hyperStatusLine: {
+      footerTransparent: false,
+      fontSize: 15,
+      fontFamily: '"Fira Code"'
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -92,7 +97,15 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-nord", "hyperterm-summon"],
+  plugins: [
+    "hyper-nord",
+    "hyperterm-summon",
+    "hyper-statusline",
+    "hyperminimal",
+    "hypercwd",
+    "hyperterm-paste",
+    "hyperterm-alternatescroll"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

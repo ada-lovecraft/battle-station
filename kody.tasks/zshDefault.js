@@ -11,8 +11,22 @@ const options = {
     if (scriptPath) {
       shell.exec(`sh ./${scriptPath}`);
       log.success('zsh shell set as default');
-    } else
+      const zshPlugins = config.zshPlugins
+      if(zshPlugins.length) {
+        log.info('Cloning zsh plugins')
+        shell.exec(`mkdir -p ${config.GIT_PROJECTS_FOLDER}`)
+        try {
+          for(const plugin in zshPlugins) {
+            const name = plugin.matches(/\/(.*)\.git/)
+            shell.exec(`git clone ${plugin} ${config.GIT_PROJECTS_FOLDER}/${name}`)
+          }
+        } catch(err) => reject(err)
+      }
+
+
+    } else {
       log.error('zsh shell script not found');
+    }
     resolve();
   }
 };

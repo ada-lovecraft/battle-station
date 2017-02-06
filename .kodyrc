@@ -1,8 +1,10 @@
 {
+
   "order": [
     "homebrew.js",
     "brewCask.js",
     "npm.js",
+    "hpm.js",
     "mas.js",
     "*"
   ],
@@ -12,7 +14,7 @@
   },
   "brewInstalls": [
     "git",
-    "zsh-autosuggestions",
+    "hub",
     "zsh-syntax-highlighting"
   ],
   "brewCasks": [
@@ -38,7 +40,10 @@
     "pingendo",
     "inkdrop",
     "hackolade"
-
+  ],
+  "hyperPlugins": [
+    "hyper-nord",
+    ""
   ],
   "apmPackages": [
     "advanced-open-file",
@@ -60,11 +65,16 @@
     "regex-railroad-diagram",
     "vue2-autocomplete"
   ],
+  "ZSH_PLUGIN_DIRECTORY": "~/.zsh-plugins",
+  "zshPlugins": [
+    "https://github.com/zsh-users/zsh-syntax-highlighting.git",
+    "https://github.com/supercrabtree/k.git"
+  ],
   "globalNpmModules": [
     "xo",
     "hpm-cli",
     "kody",
-    "pure-prompt",
+    "pure-prompt"
   ],
   "caskFonts": [
     "fira-code",

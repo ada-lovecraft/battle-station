@@ -62,7 +62,8 @@
   ],
   "brewInstalls": [
     "git",
-    "hub"
+    "hub",
+    "bro"
   ],
   "caskFonts": [
     "fira-code",

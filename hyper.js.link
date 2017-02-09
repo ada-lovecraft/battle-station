@@ -101,7 +101,6 @@ module.exports = {
     "hyper-nord",
     "hyperterm-summon",
     "hyper-statusline",
-    "hyperminimal",
     "hypercwd",
     "hyperterm-paste",
     "hyperterm-alternatescroll"

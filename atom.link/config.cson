@@ -4,6 +4,9 @@
     createFileInstantly: true
     fuzzyMatch: true
   core:
+    disabledPackages: [
+      "language-php"
+    ]
     telemetryConsent: "limited"
     themes: [
       "nebula-ui"

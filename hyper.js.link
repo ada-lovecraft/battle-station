@@ -88,7 +88,9 @@ module.exports = {
       footerTransparent: false,
       fontSize: 15,
       fontFamily: '"Fira Code"'
-    }
+    },
+    greeting: 'bash',
+    greetingArgs: ['-c', 'fortune | cowsay']
   },
 
   // a list of plugins to fetch and install from npm
@@ -100,10 +102,12 @@ module.exports = {
   plugins: [
     "hyper-nord",
     "hyperterm-summon",
-    "hyper-statusline",
     "hypercwd",
     "hyperterm-paste",
-    "hyperterm-alternatescroll"
+    "hyperterm-alternatescroll",
+    "hyper-greeting",
+    "hyper-statusline",
+    "hyperterm-clicky"
   ],
 
   // in development, you can create a directory under

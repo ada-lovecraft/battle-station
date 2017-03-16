@@ -1,11 +1,46 @@
 "*":
+  Hydrogen:
+    kernelNotifications: "(error|warning)"
+  Zen:
+    gutter: true
+    showWordCount: "Left"
+    softWrap: true
+    typewriter: true
   "advanced-open-file":
     createDirectories: true
     createFileInstantly: true
     fuzzyMatch: true
+  "atom-beautify":
+    js:
+      beautify_on_save: true
+      break_chained_methods: true
+      end_with_newline: true
+      eval_code: true
+  "atom-import-sort": {}
+  "atomic-ui":
+    colors:
+      abaseColor: "#e13258"
+      accentColor: "#321d80"
   core:
+    audioBeep: false
     disabledPackages: [
       "language-php"
+      "atom-bugs"
+      "Hydrogen"
+      "atom-exploration"
+      "hey-pane"
+      "stacktrace"
+      "markdown-preview-enhanced"
+      "language-markdown"
+      "language-gfm-enhanced"
+      "no-title-bar"
+      "angularjs"
+      "atom-react-autocomplete"
+      "atom-import-sort"
+      "atom-react-preview"
+      "autocomplete-js-import"
+      "language-vue"
+      "pretty-json"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -13,20 +48,144 @@
       "nord-atom-syntax"
     ]
     useCustomTitleBar: true
+  "dark-flat-ui":
+    accentColor: "blue"
+    coloredTabs: false
+  "daylight-ui":
+    layoutMode: "Compact"
+  docblockr:
+    auto_add_method_tag: true
+    deep_indent: true
+    per_section_indent: true
+    short_primitives: true
+  editor:
+    fontSize: 12
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 4
   "exception-reporting":
     userId: "42a43341-90b1-673d-3ac7-3b7d9b900243"
+  "file-icons":
+    onChanges: true
+    strategies: {}
   "file-types":
     ".zshrc": "source.dotfiles"
-    "^..*rc$": "source.json"
+    "^.babelrc$": "source.json"
+    "^.compilerc$": "source.json"
+    "^.eslintrc$": "source.json"
+  fonts:
+    fontFamily: "FiraCode Light"
+    preview: "The Quick brown fox { 0 !== \"O\" } "
+  "fuzzy-finder":
+    ignoredNames: [
+      "node_modules"
+    ]
+  "glacier-dark-ui":
+    layoutMode: "Compact"
+  "isotope-ui":
+    backgroundGradient: true
+    customBackgroundColorPicker: "#4627be"
+    fontFamily: "Fira Sans"
+    fontWeight: "Extra light / Thin"
+    lowContrastTooltip: true
+    matchEditorFont: true
+    minimalMode: true
   "language-babel":
     autoIndentJSX: true
+  linter:
+    gutterPosition: "Left"
+  "linter-eslint": {}
+  "linter-less":
+    ignoreUndefinedMixins: false
+    ignoreUndefinedVariables: false
+    includePath: [
+      "./node_modules"
+    ]
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
+  "markdown-preview-enhanced":
+    enableTypographer: true
+    pdfUseGithub: false
+    useGitHubStyle: false
+    useGitHubSyntaxTheme: false
   "nebula-ui": {}
   "nord-atom-ui":
     darkerFormFocusEffect: true
+    tabSizing: false
+  "one-dark-mini-ui":
+    tabSizing: "Minimum"
+  "one-dark-ui":
+    fontSize: 10
+    layoutMode: "Compact"
+  "outlander-ui": {}
+  pigments:
+    autocompleteSuggestionsFromValue: true
+    extendAutocompleteToColorValue: true
+    extendAutocompleteToVariables: true
+    filetypesForColorWords: [
+      "css"
+      "less"
+      "styl"
+      "stylus"
+      "sass"
+      "scss"
+      "sss"
+    ]
+    groupPaletteColors: "by file"
+    sortPaletteColors: "by color"
+    sourceNames: [
+      "**/*.css"
+      "**/*.styl"
+      "**/*.stylus"
+      "**/*.less"
+      "**/*.sass"
+      "**/*.scss"
+      "**/*.sss"
+    ]
+  "prettier-atom":
+    formatOnSave: true
+    singleQuote: true
+    trailingComma: true
+  "prettier-eslint": {}
   "pretty-json":
     prettifyOnSaveJSON: true
+  "pristine-ui":
+    layoutMode: "Compact"
+    tabSizing: "Minimum"
+  "project-manager":
+    includeGitRepositories: true
+  "seti-ui":
+    compactView: true
+    displayIgnored: false
+    fileIcons: false
+    font: "Default Atom Font"
+    hideTabs: true
+  "slim-dark-ui":
+    fontSize: 10
+    layoutMode: "Compact"
+  "status-bar":
+    fullWidth: false
+  swackets:
+    colorParens: true
+    colors: [
+      "#4C566A"
+      "#88C0D0"
+      "#3B4252"
+      "##3B4252"
+    ]
+  tabs:
+    alwaysShowTabBar: false
+    showIcons: false
+  "tree-view":
+    focusOnReveal: false
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+".css.postcss.source":
+  editor:
+    scrollPastEnd: true
 ".js.jsx.source":
   editor:
     showIndentGuide: true

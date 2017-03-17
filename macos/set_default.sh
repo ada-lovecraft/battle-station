@@ -198,7 +198,7 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Always prefer windows to tabs when opening documents unless
-defaults read NSGlobalDomain AppleWindowTabbingMode -string "manually"
+defaults read NSGlobalDomain AppleWindowTabbingMode -string "manual"
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true

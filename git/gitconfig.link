@@ -1,0 +1,9 @@
+# Simple gitconfig
+#
+[user]
+	name = Ada Lovecraft
+	email = ada@codevinsky.com
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.gitignore

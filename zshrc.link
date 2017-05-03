@@ -1,3 +1,4 @@
+!/bin/zsh
 export NVM_DIR="$HOME/.nvm"
   . "/usr/local/opt/nvm/nvm.sh"
 
@@ -8,14 +9,13 @@ export PATH=$PATH:$GOPATH/bin
 # use sindresorhus's pure prompt
 autoload -U promptinit; promptinit
 prompt pure
-
 # Preferred editor
 export PLUGINS=~/.zsh-plugins
 export EDITOR=atom
 
 
 # Project Home Folder
-export PROJECTS_HOME=~/github
+export PROJECTS_HOME=~/projects
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

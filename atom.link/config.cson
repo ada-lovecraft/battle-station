@@ -1,6 +1,7 @@
 "*":
   Hydrogen:
-    kernelNotifications: "(error|warning)"
+    kernelNotifications: true
+    languageMappings: "{\"javascript\": \"babel es6 javascript\"}"
   Zen:
     gutter: true
     showWordCount: "Left"
@@ -17,6 +18,8 @@
       end_with_newline: true
       eval_code: true
   "atom-import-sort": {}
+  "atom-package-deps":
+    ignored: []
   "atomic-ui":
     colors:
       abaseColor: "#e13258"
@@ -25,29 +28,29 @@
     audioBeep: false
     disabledPackages: [
       "language-php"
-      "atom-bugs"
-      "Hydrogen"
       "atom-exploration"
       "hey-pane"
       "stacktrace"
       "markdown-preview-enhanced"
       "language-markdown"
-      "language-gfm-enhanced"
       "no-title-bar"
       "angularjs"
       "atom-react-autocomplete"
       "atom-import-sort"
       "atom-react-preview"
       "autocomplete-js-import"
-      "language-vue"
       "pretty-json"
+      "atom-bugs"
+      "p5xjs-autocomplete"
+      "xatom-debug"
+      "language-gfm-enhanced"
     ]
     telemetryConsent: "limited"
     themes: [
       "nebula-ui"
       "nord-atom-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   "dark-flat-ui":
     accentColor: "blue"
     coloredTabs: false
@@ -59,11 +62,8 @@
     per_section_indent: true
     short_primitives: true
   editor:
-    fontSize: 12
     scrollPastEnd: true
     showIndentGuide: true
-    softWrapAtPreferredLineLength: true
-    softWrapHangingIndent: 4
   "exception-reporting":
     userId: "42a43341-90b1-673d-3ac7-3b7d9b900243"
   "file-icons":
@@ -94,7 +94,9 @@
   "language-babel":
     autoIndentJSX: true
   linter:
-    gutterPosition: "Left"
+    disabledProviders: [
+      "ESLint"
+    ]
   "linter-eslint": {}
   "linter-less":
     ignoreUndefinedMixins: false
@@ -102,6 +104,8 @@
     includePath: [
       "./node_modules"
     ]
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
@@ -113,7 +117,6 @@
   "nebula-ui": {}
   "nord-atom-ui":
     darkerFormFocusEffect: true
-    tabSizing: false
   "one-dark-mini-ui":
     tabSizing: "Minimum"
   "one-dark-ui":
@@ -180,12 +183,14 @@
     showIcons: false
   "tree-view":
     focusOnReveal: false
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
 ".css.postcss.source":
   editor:
     scrollPastEnd: true
+".gfm.source":
+  editor:
+    softWrapAtPreferredLineLength: true
 ".js.jsx.source":
   editor:
     showIndentGuide: true

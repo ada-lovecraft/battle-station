@@ -1,6 +1,10 @@
 export NVM_DIR="$HOME/.nvm"
   . "/usr/local/opt/nvm/nvm.sh"
 
+export GOPATH=$HOME/go
+
+export PATH=$PATH:$GOPATH/bin
+
 # use sindresorhus's pure prompt
 autoload -U promptinit; promptinit
 prompt pure
@@ -38,3 +42,5 @@ source $PLUGINS"/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /Users/ada/github/love-letters/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/ada/github/love-letters/node_modules/tabtab/.completions/electron-forge.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -37,28 +37,10 @@
   "appDefaultScriptPath": "macAppStore/set_default.sh",
   "brewCasks": [
     "google-chrome",
-    "hyper",
-    "numi",
     "atom",
-    "dash",
-    "tower",
-    "kaleidoscope",
-    "paw",
-    "kindle",
-    "sketch",
-    "sketch-toolbox",
-    "alfred",
-    "screenflow",
-    "webtorrent",
-    "kap",
+    "hyper",
     "min",
-    "mancy",
-    "black-screen",
-    "caprine",
-    "slack",
-    "pingendo",
-    "inkdrop",
-    "hackolade"
+    "slack"
   ],
   "brewInstalls": [
     "git",
@@ -77,7 +59,6 @@
   "globalNpmModules": [
     "xo",
     "hpm-cli@1.4.0",
-    "kody",
     "pure-prompt"
   ],
   "hyperPlugins": [

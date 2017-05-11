@@ -7,11 +7,20 @@
     showWordCount: "Left"
     softWrap: true
     typewriter: true
+  _dartlang:
+    _errorsInitialized: true
+    _firstRun: true
+    _version: "0.6.46"
+  _flutterAnalytics:
+    clientId: "45ed1717-5db5-4a9c-bdb7-1dfce946d29b"
+    optIn: true
   "advanced-open-file":
     createDirectories: true
     createFileInstantly: true
     fuzzyMatch: true
   "atom-beautify":
+    general:
+      _analyticsUserId: "3d2d69ba-1ec3-4deb-af6d-424692a5ea98"
     js:
       beautify_on_save: true
       break_chained_methods: true
@@ -20,16 +29,31 @@
   "atom-import-sort": {}
   "atom-package-deps":
     ignored: []
+  "atom-ternjs":
+    inlineFnCompletionDocumentation: true
+    useSnippetsAndFunction: true
   "atomic-ui":
     colors:
       abaseColor: "#e13258"
       accentColor: "#321d80"
+  "autocomplete-plus": {}
   core:
     audioBeep: false
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "language-php"
       "atom-exploration"
-      "hey-pane"
       "stacktrace"
       "markdown-preview-enhanced"
       "language-markdown"
@@ -44,16 +68,22 @@
       "p5xjs-autocomplete"
       "xatom-debug"
       "language-gfm-enhanced"
+      "language-gfm"
+      "tree-view"
+      "atom-beautify"
     ]
+    followSymlinks: false
     telemetryConsent: "limited"
     themes: [
-      "nebula-ui"
+      "seti-ui"
       "nord-atom-syntax"
     ]
     titleBar: "custom"
   "dark-flat-ui":
     accentColor: "blue"
     coloredTabs: false
+  dartlang:
+    sdkLocation: "/Users/ada/projects/flutter/bin/cache/dart-sdk"
   "daylight-ui":
     layoutMode: "Compact"
   docblockr:
@@ -62,6 +92,7 @@
     per_section_indent: true
     short_primitives: true
   editor:
+    fontSize: 12
     scrollPastEnd: true
     showIndentGuide: true
   "exception-reporting":
@@ -74,6 +105,11 @@
     "^.babelrc$": "source.json"
     "^.compilerc$": "source.json"
     "^.eslintrc$": "source.json"
+  "find-and-replace":
+    projectSearchResultsPaneSplitDirection: "down"
+    scrollToResultOnLiveSearch: true
+  flutter:
+    flutterRoot: "/Users/ada/projects/flutter"
   fonts:
     fontFamily: "FiraCode Light"
     preview: "The Quick brown fox { 0 !== \"O\" } "
@@ -83,6 +119,8 @@
     ]
   "glacier-dark-ui":
     layoutMode: "Compact"
+  "hey-pane":
+    expandedWidth: 70
   "isotope-ui":
     backgroundGradient: true
     customBackgroundColorPicker: "#4627be"
@@ -105,7 +143,10 @@
       "./node_modules"
     ]
   "linter-ui-default":
+    panelRepresents: "Current Line"
     showPanel: true
+    showProviderName: true
+    tooltipFollows: "Keyboard"
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
@@ -117,6 +158,14 @@
   "nebula-ui": {}
   "nord-atom-ui":
     darkerFormFocusEffect: true
+    tabSizing: false
+  nuclide:
+    installRecommendedPackages: true
+    "nuclide-code-format":
+      formatOnSave: true
+    "nuclide-flow":
+      enablePushDiagnostics: true
+      enableReferencesHighlight: true
   "one-dark-mini-ui":
     tabSizing: "Minimum"
   "one-dark-ui":
@@ -137,6 +186,7 @@
       "sss"
     ]
     groupPaletteColors: "by file"
+    mergeColorDuplicates: true
     sortPaletteColors: "by color"
     sourceNames: [
       "**/*.css"
@@ -149,8 +199,16 @@
     ]
   "prettier-atom":
     formatOnSave: true
-    singleQuote: true
-    trailingComma: true
+    formatOnSaveOptions:
+      enabled: true
+    prettierEslintOptions:
+      prettierLast: true
+    prettierOptions:
+      jsxBracketSameLine: true
+      semi: false
+      singleQuote: true
+      tabWidth: "2"
+    useEslint: true
   "prettier-eslint": {}
   "pretty-json":
     prettifyOnSaveJSON: true
